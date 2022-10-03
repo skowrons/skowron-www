@@ -1,7 +1,15 @@
 {{ define "main" }}
-<h1>Posts</h1>
+
+<h1 class="p-4">{{ .Title }}</h1>
 {{ range .Pages }}
-<article>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+<article class="pb-4">
+  <h2>
+    <a href="{{ .Permalink }}">
+      <span># </span>
+      <span class="underline">{{ .Title }}</span>
+    </a>
+  </h2>
+  <span class="text-gray-500">{{ .Date.Format "2006-01-02" }}</span>
+  <p>{{ .Params.TLDR }}</p>
 </article>
 {{ end }} {{ end }}

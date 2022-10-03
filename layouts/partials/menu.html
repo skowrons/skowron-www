@@ -1,0 +1,10 @@
+<!-- top nav bar start -->
+<header class="border-b-2 border-orange-500 my-8">
+  <div class="relative flex h-16 items-center space-x-4">
+    {{ range .Site.Menus.main }}
+    <div class="text-orange-500">
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </div>
+    {{ end }}
+  </div>
+</header>

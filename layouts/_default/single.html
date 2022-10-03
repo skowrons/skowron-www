@@ -1,6 +1,7 @@
 {{ define "main" }}
+<article class="prose">
+  <h1 class="p-4">{{ .Title }}</h1>
 
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-
+  <section>{{ .Content }}</section>
+</article>
 {{ end }}
