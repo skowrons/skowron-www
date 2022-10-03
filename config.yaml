@@ -1,0 +1,11 @@
+baseURL: "http://example.org/"
+title: "My New Hugo Site"
+copyright: "© Maximilian Skowron"
+#defaultContentLanguage: de
+#languages:
+#  en:
+#    languageName: English
+#    weight: 2
+#  de:
+#    languageName: Deutsch
+#    weight: 1

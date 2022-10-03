@@ -1,0 +1,10 @@
+<head>
+  <meta charset="utf-8" />
+  <title>
+    {{ block "title" . }} <!-- Blocks may include default content. --> {{
+    .Site.Title }} {{ end }}
+  </title>
+
+  {{ $style := resources.Get "style.css" }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+</head>
