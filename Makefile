@@ -1,4 +1,3 @@
-
 .Phony: watch_tailwind
 watch_tailwind:
 	npm run watch
