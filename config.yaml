@@ -21,6 +21,18 @@ menu:
       title: blog section
       url: /blog/
       weight: 110
+    - identifier: contact
+      name: Kontakt
+      title: Kontaktbereich
+      url: /contact/
+      weight: 120
+  contacts:
+    - identifier: xing
+      name: Xing
+      url: https://www.xing.com/profile/Maximilian_Skowron
+    - identifier: linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/in/nicolas-maximilian-skowron-3333bb163/
 markup:
   goldmark:
     extensions:

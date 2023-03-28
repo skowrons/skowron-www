@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on Maximilian Skowron</title>
+    <link>https://skowron.one/</link>
+    <description>Recent content in Homepage on Maximilian Skowron</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>© Maximilian Skowron</copyright>
+    <lastBuildDate>Wed, 05 Oct 2022 16:16:47 +0200</lastBuildDate><atom:link href="https://skowron.one/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lorem Ipsum Testbeitrag</title>
+      <link>https://skowron.one/blog/posts/lorem-ipsum/</link>
+      <pubDate>Wed, 05 Oct 2022 12:20:11 +0200</pubDate>
+      
+      <guid>https://skowron.one/blog/posts/lorem-ipsum/</guid>
+      <description>Einleitung Postal ist ein Open Source Mailserver, welcher mit dem proprietären Produkt von Mailgun vergleichbar ist. Im Vergleich zu anderen Open Source Projekten wie Mailcow bietet Postal eine REST API zum auslesen der einzelnen Versendestatus von E-Mails.
+Vorraussetzungen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum Testbeitrag - Die Fortsetzung</title>
+      <link>https://skowron.one/blog/posts/lorem-ipsum-2/</link>
+      <pubDate>Wed, 05 Oct 2022 12:20:11 +0200</pubDate>
+      
+      <guid>https://skowron.one/blog/posts/lorem-ipsum-2/</guid>
+      <description>Einleitung Lange wurde gewartet und nun ist es so weit. Lorem Ipsum 2!!
+Vorraussetzungen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+    </item>
+    
+    <item>
+      <title>Postal Mailserver auf Hetzner und Debian 11</title>
+      <link>https://skowron.one/blog/posts/postal-debian-11/</link>
+      <pubDate>Thu, 29 Sep 2022 12:20:11 +0200</pubDate>
+      
+      <guid>https://skowron.one/blog/posts/postal-debian-11/</guid>
+      <description>Einleitung Postal ist ein Open Source Mailserver, welcher mit dem proprietären Produkt von Mailgun vergleichbar ist. Im Vergleich zu anderen Open Source Projekten wie Mailcow bietet Postal eine REST API zum auslesen der einzelnen Versendestatus von E-Mails.
+Vorraussetzungen Docker MariaDB RabbitMQ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://skowron.one/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skowron.one/projects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
