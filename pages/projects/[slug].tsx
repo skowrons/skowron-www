@@ -9,6 +9,7 @@ import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeSlug from "rehype-slug";
 import Image from "next/image";
+import { TableOfContent } from "skowron/components/TableOfContent";
 
 interface ProjectPostProps {
   title: string;
@@ -24,22 +25,27 @@ export default function ProjectPost({ content, titleFoto }: ProjectPostProps) {
       <div className="mb-8 text-orange-500 hover:text-orange-200">
         <Link href={"/projects"}>/ Projekte & Erfahrungen</Link>
       </div>
-      {titleFoto !== "" && titleFoto !== undefined && (
-        <Image
-          src={"/" + titleFoto}
-          alt={"Titel foto"}
-          width={600}
-          height={600}
-          className="pb-8"
-        />
-      )}
-      <article className="prose">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: content,
-          }}
-        ></div>
-      </article>
+      <div className="flex flex-col-reverse md:flex-row">
+        <div>
+          {titleFoto !== "" && titleFoto !== undefined && (
+            <Image
+              src={"/" + titleFoto}
+              alt={"Titel foto"}
+              width={600}
+              height={600}
+              className="pb-8"
+            />
+          )}
+          <article className="prose">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+            ></div>
+          </article>
+        </div>
+        <TableOfContent />
+      </div>
     </>
   );
 }

@@ -8,6 +8,7 @@ import rehypeSlug from "rehype-slug";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify/lib";
+import { TableOfContent } from "skowron/components/TableOfContent";
 
 interface BlogPostProps {
   title: string;
@@ -27,13 +28,18 @@ export default function BlogPost({
       <div className="mb-8 text-orange-500 hover:text-orange-200">
         <Link href={"/blog"}>/ blog</Link>
       </div>
-      <article className="prose">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: content,
-          }}
-        ></div>
-      </article>
+      <div className="flex flex-col-reverse md:flex-row">
+        <div>
+          <article className="prose">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+            ></div>
+          </article>
+        </div>
+        <TableOfContent />
+      </div>
     </>
   );
 }
