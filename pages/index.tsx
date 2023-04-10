@@ -11,8 +11,6 @@ export default function Home() {
           content="Personal website for Maximilian Skowron"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* TODO: replace with own favicon */}
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className="flex md:flex-row flex-col-reverse flex-start items-center justify-center">

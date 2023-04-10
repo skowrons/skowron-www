@@ -8,25 +8,31 @@ import rehypeStringify from "rehype-stringify/lib";
 import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeSlug from "rehype-slug";
+import Image from "next/image";
 
 interface ProjectPostProps {
   title: string;
   date: string;
   summary: string;
   content: string;
+  titleFoto?: string; //path
 }
 
-export default function ProjectPost({
-  title,
-  content,
-  date,
-  summary,
-}: ProjectPostProps) {
+export default function ProjectPost({ content, titleFoto }: ProjectPostProps) {
   return (
     <>
       <div className="mb-8 text-orange-500 hover:text-orange-200">
         <Link href={"/projects"}>/ Projekte & Erfahrungen</Link>
       </div>
+      {titleFoto !== "" && titleFoto !== undefined && (
+        <Image
+          src={"/" + titleFoto}
+          alt={"Titel foto"}
+          width={600}
+          height={600}
+          className="pb-8"
+        />
+      )}
       <article className="prose">
         <div
           dangerouslySetInnerHTML={{
@@ -63,6 +69,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       date: matterResult.data.date,
       summary: matterResult.data.summary,
       content: contentHtml,
+      titleFoto: matterResult.data.titleFoto,
     },
   };
 };
