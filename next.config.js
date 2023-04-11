@@ -18,6 +18,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        // business card qr code
         source: '/redirect/asdf',
         destination: '/',
         permanent: true
