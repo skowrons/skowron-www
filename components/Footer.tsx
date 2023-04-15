@@ -4,8 +4,10 @@ import { SVGProps } from "react";
 const navigation = {
   main: [
     { name: "Home", href: "/" },
+    { name: "Über mich", href: "/about" },
     { name: "Blog", href: "/blog" },
     { name: "Projekte / Erfahrungen", href: "/projects" },
+    { name: "Kontakt", href: "/contact" },
   ],
   social: [
     {
