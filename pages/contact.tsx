@@ -3,7 +3,7 @@ import SimplePage from "skowron/components/SimplePage";
 const Contact = () => {
   return (
     <main>
-      <SimplePage>
+      <SimplePage className="prose">
         <h1>Kontakt</h1>
         <h2>Daten</h2>
         <p>

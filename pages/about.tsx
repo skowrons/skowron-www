@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <main>
-        <SimplePage>
+        <SimplePage className="prose">
           <h1>Abriss</h1>
           <p className="pb-4">
             Als leidenschaftlicher Entwicklungsleiter mit einer starken

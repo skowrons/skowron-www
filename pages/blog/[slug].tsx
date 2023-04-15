@@ -9,6 +9,7 @@ import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify/lib";
 import { TableOfContent } from "skowron/components/TableOfContent";
+import SimplePage from "skowron/components/SimplePage";
 
 interface BlogPostProps {
   title: string;
@@ -24,7 +25,7 @@ export default function BlogPost({
   summary,
 }: BlogPostProps) {
   return (
-    <>
+    <SimplePage>
       <div className="mb-8 text-orange-500 hover:text-orange-200">
         <Link href={"/blog"}>/ blog</Link>
       </div>
@@ -40,7 +41,7 @@ export default function BlogPost({
         </div>
         <TableOfContent />
       </div>
-    </>
+    </SimplePage>
   );
 }
 
