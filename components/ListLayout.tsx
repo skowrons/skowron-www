@@ -14,7 +14,7 @@ export type ListLayoutProps = {
 
 export const ListLayout = ({ posts, siteTitle }: ListLayoutProps) => {
   return (
-    <main>
+    <>
       <p className="pb-4 pl-4">{siteTitle}</p>
       {posts.length === 0 ? (
         <p>Keine Beiträge momentan!</p>
@@ -32,6 +32,6 @@ export const ListLayout = ({ posts, siteTitle }: ListLayoutProps) => {
           </div>
         ))
       )}
-    </main>
+    </>
   );
 };

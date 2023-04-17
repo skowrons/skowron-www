@@ -32,7 +32,7 @@ const BaseLayout = ({ children }: Props) => {
       </Head>
       <div className="font-mono">
         <NavBar />
-        <main className="px-16 py-8">{children}</main>
+        <main className="px-4 sm:px-16 py-8">{children}</main>
         <Footer /> 
       </div>
     </>
